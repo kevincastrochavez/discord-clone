@@ -40,4 +40,47 @@
       color: white;
     }
   }
+
+  &__voice,
+  &__profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    background-color: #2f3135;
+    padding: 1rem;
+    border-top: 0.1rem solid gray;
+
+    &-icon {
+      color: #4fb185;
+    }
+
+    &-info {
+      flex: 1;
+      padding: 1rem;
+
+      & h3 {
+        color: #4fb185;
+      }
+
+      & p {
+        font-size: smaller;
+      }
+    }
+
+    &-icons > .MuiSvgIcon-root {
+      padding: 1rem;
+    }
+  }
+
+  &__profile {
+    &-info {
+      flex: 1;
+      padding: 1rem;
+
+      & h3 {
+        color: white;
+      }
+    }
+  }
 }
