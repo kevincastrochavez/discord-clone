@@ -35,6 +35,7 @@
 
   &__addChannel {
     cursor: pointer;
+    font-size: 8rem;
 
     &:hover {
       color: white;
@@ -74,6 +75,10 @@
   }
 
   &__profile {
+    &-logout {
+      cursor: pointer;
+    }
+
     &-info {
       flex: 1;
       padding: 1rem;

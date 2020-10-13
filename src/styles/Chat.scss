@@ -4,4 +4,47 @@
   flex: 0.75;
   background-color: #363a3f;
   height: 100vh;
+
+  &__messages {
+    flex: 1;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__input {
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    border-top: 0.1rem solid gray;
+    background-color: #474b53;
+
+    & form {
+      flex: 1;
+
+      & input {
+        width: 100%;
+        padding: 1.5rem;
+        background: transparent;
+        border: none;
+        outline-width: 0;
+        color: white;
+        font-size: large;
+      }
+    }
+
+    &-button {
+      display: none;
+    }
+
+    &-icons > .MuiSvgIcon-root {
+      padding: 0.5rem;
+    }
+  }
 }
